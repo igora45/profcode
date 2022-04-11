@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="./css/contato.css" />
+  </head>
+  <body>
+    <div>
+      <form>
+        <fieldset>
+          <legend>Insira os dados necessarios para entrar em contato</legend>
+
+          Insira seu Nome Completo: <input type="text" name="nome" /><br />
+
+          Insira sua data de nascimento:
+          <input type="date" name="datanasc" class="small2" /><br />
+
+          Insira seu Telefone para Contato:
+          <input type="text" name="number" class="small2" /><br />
+
+          Insira seu E-mail:
+          <input
+            type="email"
+            name="email"
+            placeholder="Example: seusdados123@gmail.com"
+          /><br />
+          Quantos anos você tem?
+          <input class="small2" type="number" name="age" />
+          <br />
+
+          Onde Você Mora?<br />
+          <select name="country">
+            <option value="#"></option>
+            <option value="1">Brasil</option>
+            <option value="2">Canadá</option>
+            <option value="3">Estados Unidos</option>
+            <option value="4">India</option>
+            <option value="5">Austrália</option>
+            <option value="6">China</option>
+            <option value="7">Espanha</option>
+            <option value="8">Portugal</option>
+            <option value="9">Outro lugar</option>
+          </select>
+          <br />
+          <br />
+          <input id="sub1" type="submit" name="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
