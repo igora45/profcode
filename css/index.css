@@ -1,76 +1,88 @@
-* {
+body {
   margin: 0;
+  padding: 0;
+  background: -webkit-linear-gradient(270deg, #46465e 15%, #8b8bbf 85%);
 }
-
+/* HEADER */
 header {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  height: 80px;
-  text-align: center;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  vertical-align: center;
+  align-items: center;
+  justify-content: baseline;
 }
 
-/* LINKS para outras paginas */
-#links ul a:hover {
-  padding: 15px;
-  color: rgb(255, 0, 0);
+#h1 {
+  font-size: 2em;
+  color: rgb(207, 207, 207);
 }
-#links ul a {
-  padding: 10px;
+
+.a1 {
+  padding-left: 100px;
+}
+
+.alinks {
+}
+
+header a {
+  text-decoration: dotted;
+  padding-left: 20px;
+  font-size: 2rem;
+  color: rgb(207, 207, 207);
+}
+
+@keyframes new {
+  0% {
+    color: rgb(255, 254, 254);
+  }
+  100% {
+    color: rgb(165, 165, 165);
+  }
+}
+
+.alinks:hover {
+  animation: new 0.5s infinite;
+}
+/* FIM OF THE HEADER */
+
+/* Ajax photo */
+#ajax img {
   display: block;
-  margin: 3px;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  text-decoration: 2px solid rgb(201, 20, 20);
+  margin: 0 auto;
+  width: 180px;
+  height: 150px;
 }
-#links {
-  display: flex;
-  justify-content: center;
-}
-/* Fim dos LINKS para outras paginas */
-h1 {
+/* Fim Ajax photo */
+
+/* Images of the languages */
+.lang {
+  margin: 0 auto;
+  width: 265px;
   padding-top: 20px;
+  padding-bottom: 15px;
 }
 
-#links > img {
-  margin: 5px auto;
-  display: block;
-}
-
-/* Imagens das linguagens */
-#lang {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-figure {
-  margin: 0 150px;
-}
 .languages {
-  height: 90px;
-  width: 90px;
+  width: 180px;
+  height: 160px;
+  display: block;
 }
 figcaption {
+  margin-top: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 250px;
   text-align: center;
+  font-size: 1.5em;
+  margin-left: -25px;
 }
-/* Fim das imagens das linguagens */
-
-/* Textos */
-.text {
-  margin: 15px 15%;
-  column-count: 4;
-  column-gap: 150px;
-  column-rule: 5px solid black;
-}
-/* fim do textos */
+/* end of the images */
 
 footer {
-  position: absolute;
-  bottom: 0;
-  height: 100px;
-  width: 100%;
-  background-color: black;
-  color: white;
   text-align: center;
-  font-size: 1rem;
+  background-color: #8080b3;
+  height: 70px;
+  font-size: 1.5em;
 }
